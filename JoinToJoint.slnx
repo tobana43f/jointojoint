@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="JoinToJoint.vcxproj" Id="de1a41ff-8ba0-47ae-9522-2c6ce5ef163f" />
+</Solution>

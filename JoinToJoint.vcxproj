@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{de1a41ff-8ba0-47ae-9522-2c6ce5ef163f}</ProjectGuid>
+    <RootNamespace>JoinToJoint</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x86;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\debug\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x86;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\debug\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x64;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\debug\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x64;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\debug\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\AABBCollider.cpp" />
+    <ClCompile Include="Sources\ActiveCharacterManager.cpp" />
+    <ClCompile Include="Sources\AllAreaObjectManager.cpp" />
+    <ClCompile Include="Sources\AllCharacterManager.cpp" />
+    <ClCompile Include="Sources\AllJointableObjectManager.cpp" />
+    <ClCompile Include="Sources\Allocator.cpp" />
+    <ClCompile Include="Sources\AllStageObjectManager.cpp" />
+    <ClCompile Include="Sources\AllTextureManager.cpp" />
+    <ClCompile Include="Sources\Animation.cpp" />
+    <ClCompile Include="Sources\AnimationResourceInfo.cpp" />
+    <ClCompile Include="Sources\AreaObjectTest.cpp" />
+    <ClCompile Include="Sources\AreaObjTutorialFall.cpp" />
+    <ClCompile Include="Sources\AreaObjTutorialJointChar.cpp" />
+    <ClCompile Include="Sources\AreaObjTutorialJointObj.cpp" />
+    <ClCompile Include="Sources\AreaObjTutorialJump.cpp" />
+    <ClCompile Include="Sources\AreaObjTutorialMove.cpp" />
+    <ClCompile Include="Sources\AreaObjTutorialPendulam.cpp" />
+    <ClCompile Include="Sources\AreaObjTutorialSeparateChar.cpp" />
+    <ClCompile Include="Sources\AreaObjTutorialSeparateObj.cpp" />
+    <ClCompile Include="Sources\BaseAreaObject.cpp" />
+    <ClCompile Include="Sources\BaseCollider.cpp" />
+    <ClCompile Include="Sources\BaseJointableObj.cpp" />
+    <ClCompile Include="Sources\BaseScene.cpp" />
+    <ClCompile Include="Sources\BaseSquarePolygon.cpp" />
+    <ClCompile Include="Sources\BaseStageObj.cpp" />
+    <ClCompile Include="Sources\BlockObject.cpp" />
+    <ClCompile Include="Sources\CameraOrthographic.cpp" />
+    <ClCompile Include="Sources\CameraPerspective.cpp" />
+    <ClCompile Include="Sources\Character.cpp" />
+    <ClCompile Include="Sources\CharacterBody.cpp" />
+    <ClCompile Include="Sources\CircleCollider.cpp" />
+    <ClCompile Include="Sources\CollideDetecter.cpp" />
+    <ClCompile Include="Sources\ControllerDefinition.cpp" />
+    <ClCompile Include="Sources\DXInput.cpp" />
+    <ClCompile Include="Sources\DXMain.cpp" />
+    <ClCompile Include="Sources\DXSound.cpp" />
+    <ClCompile Include="Sources\DXTimer.cpp" />
+    <ClCompile Include="Sources\File.cpp" />
+    <ClCompile Include="Sources\GameCameraManager.cpp" />
+    <ClCompile Include="Sources\GameEndEffect.cpp" />
+    <ClCompile Include="Sources\GameMain.cpp" />
+    <ClCompile Include="Sources\GameOverManager.cpp" />
+    <ClCompile Include="Sources\GameTestScene.cpp" />
+    <ClCompile Include="Sources\Global.cpp" />
+    <ClCompile Include="Sources\Input.cpp" />
+    <ClCompile Include="Sources\JointableObjGoal.cpp" />
+    <ClCompile Include="Sources\JointableObjLift.cpp" />
+    <ClCompile Include="Sources\JointableObjPendulam.cpp" />
+    <ClCompile Include="Sources\Math.cpp" />
+    <ClCompile Include="Sources\MathTypeDefinition.cpp" />
+    <ClCompile Include="Sources\NegativeCharacterManager.cpp" />
+    <ClCompile Include="Sources\PendulumScene.cpp" />
+    <ClCompile Include="Sources\Physics.cpp" />
+    <ClCompile Include="Sources\Polygon2D.cpp" />
+    <ClCompile Include="Sources\Polygon3D.cpp" />
+    <ClCompile Include="Sources\PolygonLine.cpp" />
+    <ClCompile Include="Sources\PolygonScroll3D.cpp" />
+    <ClCompile Include="Sources\PolygonText2D.cpp" />
+    <ClCompile Include="Sources\RigidBody.cpp" />
+    <ClCompile Include="Sources\RigidbodyPair.cpp" />
+    <ClCompile Include="Sources\RigidbodyPairManager.cpp" />
+    <ClCompile Include="Sources\RigidbodyPipeline.cpp" />
+    <ClCompile Include="Sources\RigidbodyScene.cpp" />
+    <ClCompile Include="Sources\Sound.cpp" />
+    <ClCompile Include="Sources\SoundResourceInfo.cpp" />
+    <ClCompile Include="Sources\SpringSample.cpp" />
+    <ClCompile Include="Sources\StageObjCorner.cpp" />
+    <ClCompile Include="Sources\StageObjLong.cpp" />
+    <ClCompile Include="Sources\StageObjLongV.cpp" />
+    <ClCompile Include="Sources\StageObjNormalH.cpp" />
+    <ClCompile Include="Sources\StageObjNormalV.cpp" />
+    <ClCompile Include="Sources\StageObjShort.cpp" />
+    <ClCompile Include="Sources\StageObjSquare.cpp" />
+    <ClCompile Include="Sources\StageObjTest.cpp" />
+    <ClCompile Include="Sources\StageSelectScene.cpp" />
+    <ClCompile Include="Sources\System.cpp" />
+    <ClCompile Include="Sources\Texture.cpp" />
+    <ClCompile Include="Sources\TextureResourceInfo.cpp" />
+    <ClCompile Include="Sources\TitleScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\AABBCollider.h" />
+    <ClInclude Include="Sources\ActiveCharacterManager.h" />
+    <ClInclude Include="Sources\AllAreaObjectManager.h" />
+    <ClInclude Include="Sources\AllCharacterManager.h" />
+    <ClInclude Include="Sources\AllJointableObjectManager.h" />
+    <ClInclude Include="Sources\Allocator.h" />
+    <ClInclude Include="Sources\AllStageObjectManager.h" />
+    <ClInclude Include="Sources\AllTextureManager.h" />
+    <ClInclude Include="Sources\Animation.h" />
+    <ClInclude Include="Sources\AnimationResourceInfo.h" />
+    <ClInclude Include="Sources\AreaObjectID.h" />
+    <ClInclude Include="Sources\AreaObjectTest.h" />
+    <ClInclude Include="Sources\AreaObjTutorialFall.h" />
+    <ClInclude Include="Sources\AreaObjTutorialJointChar.h" />
+    <ClInclude Include="Sources\AreaObjTutorialJointObj.h" />
+    <ClInclude Include="Sources\AreaObjTutorialJump.h" />
+    <ClInclude Include="Sources\AreaObjTutorialMove.h" />
+    <ClInclude Include="Sources\AreaObjTutorialPendulam.h" />
+    <ClInclude Include="Sources\AreaObjTutorialSeparateChar.h" />
+    <ClInclude Include="Sources\AreaObjTutorialSeparateObj.h" />
+    <ClInclude Include="Sources\BaseAreaObject.h" />
+    <ClInclude Include="Sources\BaseCollider.h" />
+    <ClInclude Include="Sources\BaseJointableObj.h" />
+    <ClInclude Include="Sources\BaseScene.h" />
+    <ClInclude Include="Sources\BaseSquarePolygon.h" />
+    <ClInclude Include="Sources\BaseStageObj.h" />
+    <ClInclude Include="Sources\BlockObject.h" />
+    <ClInclude Include="Sources\CameraOrthographic.h" />
+    <ClInclude Include="Sources\CameraPerspective.h" />
+    <ClInclude Include="Sources\Character.h" />
+    <ClInclude Include="Sources\CharacterBody.h" />
+    <ClInclude Include="Sources\CircleCollider.h" />
+    <ClInclude Include="Sources\CollideDetecter.h" />
+    <ClInclude Include="Sources\ControllerDefinition.h" />
+    <ClInclude Include="Sources\DXInput.h" />
+    <ClInclude Include="Sources\DXSound.h" />
+    <ClInclude Include="Sources\DXTimer.h" />
+    <ClInclude Include="Sources\DXVertex.h" />
+    <ClInclude Include="Sources\File.h" />
+    <ClInclude Include="Sources\GameCameraManager.h" />
+    <ClInclude Include="Sources\GameEndEffect.h" />
+    <ClInclude Include="Sources\GameMain.h" />
+    <ClInclude Include="Sources\GameOverManager.h" />
+    <ClInclude Include="Sources\GameState.h" />
+    <ClInclude Include="Sources\GameTestScene.h" />
+    <ClInclude Include="Sources\Global.h" />
+    <ClInclude Include="Sources\Input.h" />
+    <ClInclude Include="Sources\JointableObjGoal.h" />
+    <ClInclude Include="Sources\JointableObjID.h" />
+    <ClInclude Include="Sources\JointableObjLift.h" />
+    <ClInclude Include="Sources\JointableObjPendulam.h" />
+    <ClInclude Include="Sources\Math.h" />
+    <ClInclude Include="Sources\MathTypeDefinition.h" />
+    <ClInclude Include="Sources\NegativeCharacterManager.h" />
+    <ClInclude Include="Sources\PendulumScene.h" />
+    <ClInclude Include="Sources\Physics.h" />
+    <ClInclude Include="Sources\PlatformSelector.h" />
+    <ClInclude Include="Sources\Polygon2D.h" />
+    <ClInclude Include="Sources\Polygon3D.h" />
+    <ClInclude Include="Sources\PolygonLine.h" />
+    <ClInclude Include="Sources\PolygonScroll3D.h" />
+    <ClInclude Include="Sources\PolygonText2D.h" />
+    <ClInclude Include="Sources\RigidBody.h" />
+    <ClInclude Include="Sources\RigidbodyPair.h" />
+    <ClInclude Include="Sources\RigidbodyPairManager.h" />
+    <ClInclude Include="Sources\RigidbodyPipeline.h" />
+    <ClInclude Include="Sources\RigidbodyScene.h" />
+    <ClInclude Include="Sources\Sound.h" />
+    <ClInclude Include="Sources\SoundResourceInfo.h" />
+    <ClInclude Include="Sources\SpringSample.h" />
+    <ClInclude Include="Sources\SquarePolygonData.h" />
+    <ClInclude Include="Sources\StageID.h" />
+    <ClInclude Include="Sources\StageObjCorner.h" />
+    <ClInclude Include="Sources\StageObjectID.h" />
+    <ClInclude Include="Sources\StageObjLong.h" />
+    <ClInclude Include="Sources\StageObjLongV.h" />
+    <ClInclude Include="Sources\StageObjNormalH.h" />
+    <ClInclude Include="Sources\StageObjNormalV.h" />
+    <ClInclude Include="Sources\StageObjShort.h" />
+    <ClInclude Include="Sources\StageObjSquare.h" />
+    <ClInclude Include="Sources\StageObjTest.h" />
+    <ClInclude Include="Sources\StageSelectScene.h" />
+    <ClInclude Include="Sources\System.h" />
+    <ClInclude Include="Sources\Texture.h" />
+    <ClInclude Include="Sources\TextureResourceInfo.h" />
+    <ClInclude Include="Sources\TitleScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets" Condition="Exists('packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets'))" />
+  </Target>
+</Project>
